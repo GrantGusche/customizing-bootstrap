@@ -3,11 +3,11 @@
 
 // Import Google fonts here
 @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&display=swap');
-// @import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Source+Sans+3&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Libre+Baskerville:wght@400;700&family=Nunito+Sans:opsz,wght@6..12,200;6..12,400&family=Source+Sans+3&display=swap');
 
-// $headings-font-family:'Libre Baskerville', serif;
-// $headings-font-family: 'Source Sans', sans-serif;
+$headings-font-family:'Libre Baskerville', serif;
+$font-family-base: 'Source Sans', sans-serif;
 
 // Include any default variable overrides here (colors, font sizes, font family, etc..)
 $primary: #A04ADD;
@@ -21,7 +21,7 @@ $dark: #181853;
 
 
 // Adjust nav link hover color here
-
+$navbar-dark-hover-color: $primary;
 
 
 // Typography
@@ -33,7 +33,12 @@ $dark: #181853;
 
 
 // Change font sizes for h1-h6 using values in assignment
-
+$h1-font-size: 3.052rem;
+$h2-font-size: 2.441rem;
+$h3-font-size: 1.953rem;
+$h4-font-size: 1.563rem;
+$h5-font-size: 1.25rem;
+$h6-font-size: 1rem;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
@@ -41,3 +46,6 @@ $dark: #181853;
 // Add additional custom code here
 
 // Target .navbar-brand and change font-family to use 'Libre Baskerville'.
+.navbar-brand {
+    font-family: $headings-font-family;
+}
